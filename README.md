@@ -1,8 +1,7 @@
 # 🎯 MysteryNumberGame
 
 A browser-based number guessing game built with vanilla HTML, CSS, and JavaScript.
-
-![Game Screenshot](https://i.postimg.cc/C1pkfRsF/Screenshot-2026-04-07-212207.png)
+![Game Screenshot](https://i.postimg.cc/BZVDx7gH/Screenshot-2026-04-07-213655.png)
 
 ---
 
@@ -42,6 +41,8 @@ The game ends when the player guesses correctly or runs out of tries.
 * CSS3
 * JavaScript (ES6+)
 
+---
+![Game Screenshot](https://i.postimg.cc/C1pkfRsF/Screenshot-2026-04-07-212207.png)
 ---
 
 ## 🚀 Getting Started
