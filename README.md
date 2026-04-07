@@ -3,7 +3,7 @@
 A browser-based number guessing game built with vanilla HTML, CSS, and JavaScript.
 
 
-![Game Screenshot](https://i.postimg.cc/BZVDx7gH/Screenshot-2026-04-07-213655.png)
+![Mystery Number Game](https://i.postimg.cc/TwTj4yLg/Screenshot-2026-04-07-212047.png)
 
 ---
 
