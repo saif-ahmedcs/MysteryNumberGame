@@ -8,9 +8,29 @@ const guessEl = document.querySelector('.guess');
 const bodyEl = document.querySelector('body');
 
 let secretNumber = Math.trunc(Math.random() * 101);
-let tries = Number(scoreEl.textContent);
+let tries = 20;
 let highestScore = 0;
 let gameOver = false;
+
+function updateScore() {
+  tries--;
+  scoreEl.textContent = tries;
+}
+
+function resetGame() {
+  gameOver = false;
+  tries = 20;
+  secretNumber = Math.trunc(Math.random() * 101);
+
+  numberEl.style.width = '15rem';
+  bodyEl.style.backgroundColor = '#222';
+
+  scoreEl.textContent = tries;
+  messageEl.textContent = 'Start guessing...';
+
+  guessEl.value = '';
+  numberEl.textContent = '?';
+}
 
 function checkGuess() {
   const guess = Number(guessEl.value);
@@ -37,11 +57,9 @@ function checkGuess() {
   } else if (tries > 1) {
     messageEl.textContent =
       guess < secretNumber ? '📉 Too low!' : '📈 Too high!';
-    tries--;
-    scoreEl.textContent = `${tries}`;
+    updateScore();
   } else {
-    tries--;
-    scoreEl.textContent = `${tries}`;
+    updateScore();
     messageEl.textContent = '❌ YOU LOST THE GAME ❌';
     gameOver = true;
   }
@@ -55,14 +73,4 @@ guessEl.addEventListener('keydown', function (e) {
   }
 });
 
-document.querySelector('.btn.again').addEventListener('click', function () {
-  gameOver = false;
-  tries = 20;
-  secretNumber = Math.trunc(Math.random() * 101);
-  numberEl.style.width = '15rem';
-  bodyEl.style.backgroundColor = '#222';
-  scoreEl.textContent = tries;
-  messageEl.textContent = 'Start guessing...';
-  guessEl.value = '';
-  numberEl.textContent = '?';
-});
+document.querySelector('.btn.again').addEventListener('click', resetGame);
