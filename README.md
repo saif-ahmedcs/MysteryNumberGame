@@ -40,14 +40,6 @@ The game ends when the player guesses correctly or runs out of tries.
 * 🎨 Visual feedback — background turns green on a win
 
 ---
-
-## 🛠️ Built With
-
-* HTML5
-* CSS3
-* JavaScript (ES6+)
-
----
 ![Game Screenshot](https://i.postimg.cc/C1pkfRsF/Screenshot-2026-04-07-212207.png)
 ---
 
