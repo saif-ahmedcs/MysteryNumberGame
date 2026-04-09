@@ -55,16 +55,14 @@ No installation or build step required. You can run the game in two ways:
 
 Clone the project using Git:
 
+```bash
 git clone https://github.com/saif-ahmedcs/MysteryNumberGame.git
-
-Then open the project folder:
-
 cd MysteryNumberGame
+```
 
 Open the game in your browser:
 
 Double-click **index.html**
-
 ---
 
 ### Option 2 — Download the ZIP
