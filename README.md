@@ -60,9 +60,7 @@ git clone https://github.com/saif-ahmedcs/MysteryNumberGame.git
 cd MysteryNumberGame
 ```
 
-Open the game in your browser:
-
-Double-click **index.html**
+Open the game in your browser: Double-click `index.html`
 ---
 
 ### Option 2 — Download the ZIP
